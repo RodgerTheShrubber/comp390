@@ -5,7 +5,6 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
-    "@google-cloud/speech": "^0.7.0",
     "ejs": "2.3.4",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
