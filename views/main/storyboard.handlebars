@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+Basic webpage for tech demo involving google speech to text api. Credit to Chris
+Wilson for audio display code and recorder code.
+        
+-->
+<html>
+<div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/storyboardSelect">Demo</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+</div>
+    <head>
+        <title>MVP Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<div class="jumbotron text-center">
+  <h2 id="question" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');">Are you hungry? Where do you want to eat?</h2>
+  <img class="visAid" id="p0" src= "../images/storyboards/wendys/0/background.jpg">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 id="res1" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[0]}}</h3>
+      <img class="visAid" id="p1" src= "../images/storyboards/wendys/0/hungry.jpg">
+    </div>
+    <div class="col-sm-4">
+      <h3 id="res2" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[1]}}</h3>
+        <img class="visAid" id="p2" src= "../images/storyboards/wendys/0/eat.jpg">
+    </div>
+    <div class="col-sm-4">
+      <h3 id="res3" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[2]}}</h3> 
+    <img class="visAid" id="p3" src= "../images/storyboards/wendys/0/wendys.jpg">
+    </div>
+  </div>
+</div>
+
+<div clas="container" id="viz">
+    <canvas id="wavedisplay" width="1024" height="500"></canvas>
+</div>
+
+<div class="container" id="buttonDiv" style="horizontal-align: middle;">
+    <img class="controlButton" onclick="playSound();" src = "../images/play_button.png">
+    <script>
+        var onImg= "../images/mic_on.png";
+        var offImg= "../images/mic_off.png";
+    </script>
+    <img class="controlButton" onclick="toggleRecording(this);" src = "../images/mic_off.png">
+    <img class="controlButton" onclick="submit()" style="width: 200px;" src="../images/submit.png">
+</div>
+</html>
+<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <body>
+        <div id="guiDiv">
+            <h1>Respond to the prompts below using the words below!</h1>
+            <p id="myWord" onclick="getWord();">Click Here!</p>
+            <h3> Use the following in your response </h3>
+            <div class="responses">
+                <p id="r1">.</p>
+                <p id="r2">.</p>
+                <p id="r3">.</p>
+            </div>
+            <p id="correct"> . <p>
+            <div id="buttonDiv">
+                <img onclick="playSound();" src = "../images/play_button.png" style ="height: 100px;width: 100px">
+                <script>
+                var onImg= "../images/mic_on.png";
+                var offImg= "../images/mic_off.png";
+                </script>
+                <img onclick="this.src = this.src == onImg ? offImg : onImg;toggleRecording(this);" src = "../images/mic_off.png" style ="height: 100px;width: 100px">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
+        <div id="viz">
+            <!--
+            <canvas id="analyser" width="1024" height="500"></canvas>
+            - ->
+            <canvas id="wavedisplay" width="1024" height="500"></canvas>
+  </div>
+    </body>
+
+-->

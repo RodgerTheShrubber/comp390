@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 6, 2017, 11:31:00 PM
+    Author     : tbrum96
+*/
+/*
+html { overflow: hidden; }
+body { 
+	font: 14pt Arial, sans-serif; 
+	background: lightgrey;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	margin: 50px;
+}
+*/
+canvas { 
+	display: inline-block; 
+	background: #202020; 
+	width: 30%;
+	height: 15%;
+	box-shadow: 0px 0px 10px blue;
+}
+#save, #save img { height: 10vh; }
+#save { opacity: 0.25;}
+#save[download] { opacity: 1;}
+
+#guiDiv {
+    	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#responses {
+	text-align: : center;
+}
+
+#controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	height: 20%;
+	width: 100%;
+}
+#record.recording { 
+	background: red;
+	background: -webkit-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%); 
+	background: -moz-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%); 
+	background: radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%); 
+}
+
+@media (orientation: landscape) {
+	body { flex-direction: row;}
+	#controls { flex-direction: column; height: 100%; width: 10%;}
+	#viz { height: 100%; width: 90%;}
+}
+
+#viz {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.controlButton {
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+	display:inline-block;
+}
+
+#buttonDiv{
+	text-align:center;
+}
+
+.col-sm-4{
+	text-align:center;
+}
+
+#p0{
+	height: 200px;
+	width: 200px;
+}
+
+.visAid{
+	height: 125px;
+	width: 125px;;
+	display:inline-block;
+}

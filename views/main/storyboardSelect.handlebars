@@ -1,0 +1,23 @@
+<div class="container">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="/storyboardSelect">Demo</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+  <h3>Pick a storyboard to practice!</h3>
+
+  <ul class="list-group">
+
+    {{#each storyboards}}
+        <li class="list-group-item" id="{{this.name}}">
+          <a class = "storyboard" href="/storyboard/{{this.name}}">
+            <div class="storyboard-title">
+              {{this.name}}
+            </div>
+            <div class="storyboard-description">{{this.description}}</div>
+          </a>
+        </li>
+    {{/each}}
+
+  </ul>
+</div>
