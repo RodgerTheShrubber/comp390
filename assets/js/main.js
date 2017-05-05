@@ -144,7 +144,7 @@ function submit() {
     }
     if(state < max) {
         document.getElementById("question").innerHTML = questions[state];
-        document.getElementById("p0").src = '../images/storyboards/wendys/' + state + '/background.jpg';
+        //document.getElementById("p0").src = '../images/storyboards/wendys/' + state + '/background.jpg';
         document.getElementById("res1").innerHTML = responses[0 + 3 * state];
         document.getElementById("p1").src = images[0 + 3 * state];
         document.getElementById("res2").innerHTML = responses[1 + 3 * state];
@@ -153,7 +153,7 @@ function submit() {
         document.getElementById("p3").src = images[2 + 3 * state];
     }else {
         document.getElementById("question").innerHTML = "You've reached the end! Good work!";
-        document.getElementById("p0").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
+        //document.getElementById("p0").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
         document.getElementById("res1").innerHTML = "";
         document.getElementById("p1").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
         document.getElementById("res2").innerHTML = "";
