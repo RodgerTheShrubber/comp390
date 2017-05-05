@@ -48,3 +48,54 @@ li a:hover {
   color: black;
     text-align: left;
 }
+
+#stylized input{
+    display: block;
+    font-size:11px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:300px;
+    margin:2px 0 20px 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#submit {
+    margin: auto;
+}
+
+.three-col {
+    display: flex;
+    overflow: hidden;/* Makes this div contain its floats */
+}
+
+.three-col .col1,
+.three-col .col2,
+.three-col .col3 {
+    flex:1;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+
+.three-col .col1 {
+    order: 1;
+}
+
+.three-col .col2 {
+    order: 2;
+}
+
+.three-col .col3 {
+    order: 3;
+}
+
+.three-col label {
+    display: block;
+}
+
+#submit {
+    margin: 0 auto;
+}

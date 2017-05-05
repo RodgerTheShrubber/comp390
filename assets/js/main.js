@@ -132,9 +132,10 @@ function initAudio() {
 
 window.addEventListener('load', initAudio );
 var state = 0;
-var max = 4;
-var questions = ['Are you hungry? Where do you want to eat?', 'Welcome to Wendys! What would you like to order?', 'What would you like on your hamburger?', 'The total is $8. Will that be cash or card?'];
-var responses = ['hungry', 'eat', 'wendys','hamburger','fries','soda','ketchup','pickles','mustard','i','pay','card'];
+var max = 3;
+var questions = [q1,q2,q3]
+var responses = [ra1,ra2,ra3,rb1,rb2,rb3,rc1,rc2,rc3];
+var images = [ia1,ia2,ia3,ib1,ib2,ib3,ic1,ic2,ic3];
 
 function submit() {
     state = state + 1;
@@ -145,20 +146,20 @@ function submit() {
         document.getElementById("question").innerHTML = questions[state];
         document.getElementById("p0").src = '../images/storyboards/wendys/' + state + '/background.jpg';
         document.getElementById("res1").innerHTML = responses[0 + 3 * state];
-        document.getElementById("p1").src = '../images/storyboards/wendys/' + state + '/'+ responses[0 + 3 * state] +'.jpg';
+        document.getElementById("p1").src = images[0 + 3 * state];
         document.getElementById("res2").innerHTML = responses[1 + 3 * state];
-        document.getElementById("p2").src = '../images/storyboards/wendys/' + state + '/'+ responses[1 + 3 * state] +'.jpg';
+        document.getElementById("p2").src = images[1 + 3 * state];
         document.getElementById("res3").innerHTML = responses[2 + 3 * state];
-        document.getElementById("p3").src = '../images/storyboards/wendys/' + state + '/'+ responses[2 + 3 * state] +'.jpg';
+        document.getElementById("p3").src = images[2 + 3 * state];
     }else {
         document.getElementById("question").innerHTML = "You've reached the end! Good work!";
-        document.getElementById("p0").src = '../images/placeholder.png';
+        document.getElementById("p0").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
         document.getElementById("res1").innerHTML = "";
-        document.getElementById("p1").src = '../images/placeholder.png';
+        document.getElementById("p1").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
         document.getElementById("res2").innerHTML = "";
-        document.getElementById("p2").src = '../images/placeholder.png';
+        document.getElementById("p2").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
         document.getElementById("res3").innerHTML = "";
-        document.getElementById("p3").src = '../images/placeholder.png';
+        document.getElementById("p3").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
     }
 }
 

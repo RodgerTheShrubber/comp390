@@ -1,23 +1,90 @@
+<!DOCTYPE html>
 <div class="container">
   <ul>
     <li><a href="/">Home</a></li>
     <li><a class="active" href="/storyboardSelect">Demo</a></li>
     <li><a href="/about">About</a></li>
   </ul>
-  <h3>Pick a storyboard to practice!</h3>
+  <h3>Fill in the following information to generate a Storyboard!</h3>
 
-  <ul class="list-group">
+ 	<div id="stylized">
+    	<h1>Storyboard Info</h1>
+    	<form action="/storyboard" method="post">
+        	<fieldset>
+        		<div class = "three-col">
+            		<div class = "col1">
+            			<label for="q1">Question 1:</label>
+            			<input type="text" id="q1" name="q1" placeholder="Enter a question to practice!" />
 
-    {{#each storyboards}}
-        <li class="list-group-item" id="{{this.name}}">
-          <a class = "storyboard" href="/storyboard/{{this.name}}">
-            <div class="storyboard-title">
-              {{this.name}}
-            </div>
-            <div class="storyboard-description">{{this.description}}</div>
-          </a>
-        </li>
-    {{/each}}
+            	    	<label for="ra1">Response 1:</label>
+            	    	<input type="text" id="ra1" name= "ra1" placeholder="Enter a possible response" />
 
-  </ul>
+            	    	<label for="ia1">Image URL:</label>
+            	    	<input type="url" id="ia1" name="ia1" placeholder="Provide an image for the response" />
+
+            	    	<label for="ra2">Response 2:</label>
+            	    	<input type="text" id="ra2" name= "ra2" placeholder="Enter a possible response" />
+
+            	    	<label for="ia2">Image URL:</label>
+            	    	<input type="url" id="ia2" name="ia2" placeholder="Provide an image for the response" />
+
+            	    	<label for="ra3">Response 3:</label>
+            	    	<input type="text" id="ra3" name= "ra3" placeholder="Enter a possible response" />
+
+            	    	<label for="ia3">Image URL:</label>
+            	    	<input type="url" id="ia3" name="ia3" placeholder="Provide an image for the response" />
+            		</div>
+            		<div class = "col2">
+            			<label for="q2">Question 2:</label>
+            			<input type="text" id="q2" name="q2" placeholder="Enter a question to practice!" />
+
+            	    	<label for="rb1">Response 1:</label>
+            	    	<input type="text" id="rb1" name= "rb1" placeholder="Enter a possible response" />
+
+            	    	<label for="ib1">Image URL:</label>
+            	    	<input type="url" id="ib1" name="ib1" placeholder="Provide an image for the response" />
+
+            	    	<label for="rb2">Response 2:</label>
+            	    	<input type="text" id="rb2" name= "rb2" placeholder="Enter a possible response" />
+
+            	    	<label for="ib2">Image URL:</label>
+            	    	<input type="url" id="ib2" name="ib2" placeholder="Provide an image for the response" />
+
+            	    	<label for="rb3">Response 3:</label>
+            	    	<input type="text" id="rb3" name= "rb3" placeholder="Enter a possible response" />
+
+            	    	<label for="ib3">Image URL:</label>
+            	    	<input type="url" id="ib3" name="ib3" placeholder="Provide an image for the response" />
+            		</div>
+            		<div class = "col3">
+            			<label for="q3">Question 3:</label>
+            			<input type="text" id="q3" name="q3" placeholder="Enter a question to practice!" />
+
+            	    	<label for="rc1">Response 1:</label>
+            	    	<input type="text" id="rc1" name= "rc1" placeholder="Enter a possible response" />
+
+            	    	<label for="ic1">Image URL:</label>
+            	    	<input type="url" id="ic1" name="ic1" placeholder="Provide an image for the response" />
+
+            	    	<label for="rc2">Response 2:</label>
+            	    	<input type="text" id="rc2" name= "rc2" placeholder="Enter a possible response" />
+
+            	    	<label for="ic2">Image URL:</label>
+            	    	<input type="url" id="ic2" name="ic2" placeholder="Provide an image for the response" />
+
+            	    	<label for="rc3">Response 3:</label>
+            	    	<input type="text" id="rc3" name= "rc3" placeholder="Enter a possible response" />
+
+            	    	<label for="ic3">Image URL:</label>
+            	    	<input type="url" id="ic3" name="ic3" placeholder="Provide an image for the response" />
+            		</div>
+            	</div>
+            	<div id = "submit">
+            		<input class="btn-primary" type="submit" value="Generate Storyboard" />
+            	</div>
+
+        	</fieldset>
+    	</form>
+	</div>
+
 </div>

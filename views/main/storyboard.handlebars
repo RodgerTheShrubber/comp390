@@ -13,29 +13,29 @@ Wilson for audio display code and recorder code.
     </ul>
 </div>
     <head>
-        <title>MVP Demo</title>
+        <title>{{storyboardName}}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
 <div class="jumbotron text-center">
-  <h2 id="question" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');">Are you hungry? Where do you want to eat?</h2>
+  <h2 id="question" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');">{{q1}}</h2>
   <img class="visAid" id="p0" src= "../images/storyboards/wendys/0/background.jpg">
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3 id="res1" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[0]}}</h3>
-      <img class="visAid" id="p1" src= "../images/storyboards/wendys/0/hungry.jpg">
+      <h3 id="res1" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{ra1}}</h3>
+      <img class="visAid" id="p1" src= {{ia1}}>
     </div>
     <div class="col-sm-4">
-      <h3 id="res2" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[1]}}</h3>
-        <img class="visAid" id="p2" src= "../images/storyboards/wendys/0/eat.jpg">
+      <h3 id="res2" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{ra2}}</h3>
+        <img class="visAid" id="p2" src= {{ia2}}>
     </div>
     <div class="col-sm-4">
-      <h3 id="res3" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{storyboard.responseWords.[2]}}</h3> 
-    <img class="visAid" id="p3" src= "../images/storyboards/wendys/0/wendys.jpg">
+      <h3 id="res3" onclick="responsiveVoice.speak(this.innerHTML, 'US English Male');" style="text-align: center;">{{ra3}}</h3> 
+    <img class="visAid" id="p3" src= {{ia3}}>
     </div>
   </div>
 </div>
@@ -47,6 +47,27 @@ Wilson for audio display code and recorder code.
 <div class="container" id="buttonDiv" style="horizontal-align: middle;">
     <img class="controlButton" onclick="playSound();" src = "../images/play_button.png">
     <script>
+        var q1 = "{{q1}}";
+        var ra1 = "{{ra1}}";
+        var ia1 = "{{ia1}}";
+        var ra2 = "{{ra2}}";
+        var ia2 = "{{ia2}}";
+        var ra3 = "{{ra3}}";
+        var ia3 = "{{ia3}}";
+        var q2 = "{{q2}}";
+        var rb1 = "{{rb1}}";
+        var ib1 = "{{ib1}}";
+        var rb2 = "{{rb2}}";
+        var ib2 = "{{ib2}}";
+        var rb3 = "{{rb3}}";
+        var ib3 = "{{ib3}}";
+        var q3 = "{{q1}}";
+        var rc1 = "{{rc1}}";
+        var ic1 = "{{ic1}}";
+        var rc2 = "{{rc2}}";
+        var ic2 = "{{ic2}}";
+        var rc3 = "{{rc3}}";
+        var ic3 = "{{ic3}}";
         var onImg= "../images/mic_on.png";
         var offImg= "../images/mic_off.png";
     </script>

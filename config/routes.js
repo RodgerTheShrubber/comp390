@@ -38,9 +38,8 @@ module.exports.routes = {
 
   'get /storyboardSelect' : 'HomeController.storyboardSelect',
 
-  'get /storyboard/:storyboard_name' : 'StoryboardController.loadStoryboard',
+  'post /storyboard' : 'StoryboardController.loadStoryboard',
 
-  'post /speech' : 'SpeechController.submitSpeech'
 
   /***************************************************************************
   *                                                                          *
